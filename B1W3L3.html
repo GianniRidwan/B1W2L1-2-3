@@ -5,26 +5,54 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var a = 6;//Verander nummer 6 naar een ander getal als je een andere tafel wilt berekenen.
-			var b = prompt("Noem een getal die je wilt vermenigvuldigen met 6");
-			alert(Number(a) * Number(b));
-			var c = 3;//Verander nummer 3 naar een ander getal als je een andere tafel wilt berekenen.
-			var d = prompt("Noem een getal die je wilt vermenigvuldigen met 3");
-			alert(Number(c) * Number(d));
+			var firstNumber = 6;//Verander nummer 6 naar een ander getal als je een andere tafel wilt berekenen.
+			var secondNumber = prompt("Noem een getal die je wilt vermenigvuldigen met 6");
+			alert(Number(firstNumber) * Number(secondNumber));
+			var thirdNumber = 3;//Verander nummer 3 naar een ander getal als je een andere tafel wilt berekenen.
+			var fourthNumber = prompt("Noem een getal die je wilt vermenigvuldigen met 3");
+			alert(Number(thirdNumber) * Number(fourthNumber));
 
-			var a = 12;
-			var b = 6;
-			var c = 10;
-			var d = 5;
 
-			document.write(a + " + "+b+" = " + (a + b));
-			document.write("<br>");
-			document.write((a + b) + " x "+c+" = " + (a + b) * c);
-			document.write("<br>");
-			document.write(((a + b) * c) + " / "+d+" = " + ((a + b) * c) / d);
-			document.write("<br>");
-			document.write((((a + b) * c) / d) + " - "+a+" = " + (((a + b) * c) / d) - a);
+			var firstNumber = 12;
+			var secondNumber = 6;
+			var thirdNumber = 10;
+			var fourthNumber = 5;
 
+			document.write(firstNumber + " + "+secondNumber+" = " + (firstNumber + secondNumber));
+			var total_1 = (firstNumber + secondNumber);
+			document.write("<br>");
+			document.write(total_1 + " x "+thirdNumber+" = " + total_1 * thirdNumber);
+			var total_2 = (total_1 * thirdNumber);
+			document.write("<br>");
+			document.write(total_2 + " / "+fourthNumber+" = " + total_2 / fourthNumber);
+			var total_3 = (total_2 / fourthNumber);
+			document.write("<br>");
+			var total_4 = (total_3 - firstNumber);
+			document.write(total_3 + " - "+firstNumber+" = " + total_4);
+
+
+			var firstNumber = 12;
+			var secondNumber = prompt("Noem een getal die je bij de som wilt optellen (Deze som staat los van de vorige vragen):");
+			var thirdNumber = prompt("Noem een getal die je daarmee wilt vermenigvuldigen:");
+			var fourthNumber = prompt("Noem vervolgens een getal waarmee je hem door wilt delen:");
+			var fifthNumber = prompt("Noem vervolgens een getal die je eraf wilt trekken:");
+
+			document.write("<br>");
+			document.write("<br>");
+
+			document.write(firstNumber + " + "+secondNumber+" = " + (Number(firstNumber) + Number(secondNumber)));
+			var total_1 = (firstNumber + secondNumber);
+			document.write("<br>");
+			document.write(total_1 + " x "+thirdNumber+" = " + total_1 * thirdNumber);
+			var total_2 = (total_1 * thirdNumber);
+			document.write("<br>");
+			document.write(total_2 + " / "+fourthNumber+" = " + total_2 / fourthNumber);
+			var total_3 = (total_2 / fourthNumber);
+			document.write("<br>");
+			var total_4 = (total_3 - fifthNumber);
+			document.write(total_3 + " - "+fifthNumber+" = " + total_4);
+
+			/*Wat mij is opgevallen is dat ik bij de laatste som Number() moest gebruiken om een getal bij elkaar op te laten tellen.*/
 		</script>
 	</body>
 </html>
